@@ -1,6 +1,6 @@
 ```javascript
 function getLastItem(arr) {
-  return arr?.[arr.length - 1]; 
+  return Array.isArray(arr) && arr.length > 0 ? arr[arr.length - 1] : undefined; 
 }
 
 async function fetchData() {
@@ -13,7 +13,7 @@ async function fetchData() {
     return data;
   } catch (error) {
     console.error("Error fetching data:", error);
-    return null; // or throw the error, depending on your error handling strategy
+    return null; 
   }
 }
 function multiply(a, b) {
@@ -28,7 +28,7 @@ function getUserName(user) {
 }
 function doubleArray(arr) {
   if (!Array.isArray(arr)) {
-    return []; //or throw an error, depending on your error handling strategy
+    return []; 
   }
   let doubledArr = arr.map(item => item * 2);
   return doubledArr;

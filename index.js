@@ -17,11 +17,11 @@ async function fetchData() {
   }
 }
 function multiply(a, b) {
-  let result = a * b 
+  result = a * b 
   return result
 }
 function isTen(val) {
-  return val === 10;
+  val === 10;
 }
 function getUserName(user) {
   return user?.name?.first; 

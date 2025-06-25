@@ -17,8 +17,8 @@ async function fetchData() {
   }
 }
 function multiply(a, b) {
-  let result = a * b; 
-  return result;
+  let result = a * b 
+  return result
 }
 function isTen(val) {
   return val === 10;
@@ -28,10 +28,10 @@ function getUserName(user) {
 }
 function doubleArray(arr) {
   if (!Array.isArray(arr)) {
-    return []; 
+    return [] 
   }
   let doubledArr = arr.map(item => item * 2);
-  return doubledArr;
+  return doubledArr
 }
 
 ```

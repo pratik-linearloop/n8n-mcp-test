@@ -17,21 +17,21 @@ async function fetchData() {
   }
 }
 function multiply(a, b) {
-  result = a * b 
-  return result
+  const result = a * b; 
+  return result;
 }
 function isTen(val) {
-  val === 10;
+  return val === 10;
 }
 function getUserName(user) {
   return user?.name?.first; 
 }
 function doubleArray(arr) {
   if (!Array.isArray(arr)) {
-    return [] 
+    return []; 
   }
   let doubledArr = arr.map(item => item * 2);
-  return doubledArr
+  return doubledArr;
 }
 
 ```
